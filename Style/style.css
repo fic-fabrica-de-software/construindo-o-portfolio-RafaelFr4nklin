@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#cabecalho {
+    background-color: rgb(156, 123, 79);
+
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.topo {
+    display: flex;
+    text-align:left;
+    padding-left: 20px;
+    font-style: oblique;
+    
+}
+
+#corpo   {
+    background-color: rgb(233, 233, 208)
+}
+
+.pedaco {
+    border-radius: 2%;
+    border:  2px solid;
+    border-color: rgb(156, 123, 79);;
+     padding-left: 20px;
+     padding: 50px 40px;
+    padding: 15px;
+    border-radius: 8px; 
+    flex: 1;
+    background-color: rgb(202, 202, 198);
+}
+
+.rodape {
+    background-color: rgb(156, 123, 79);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
