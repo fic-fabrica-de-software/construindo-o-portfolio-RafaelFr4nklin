@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Rafael Franklin</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <style>
+        /* CSS mínimo para visualização da linha */
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .onda-luz {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 120px;
+            width: 100%;
+            pointer-events: none;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+   
+    <header class="cabecalho">
+        <nav class="menu">
+            <a href="#artigos">Artigos</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    
+    <section class="hero" style="position:relative; min-height:350px;">
+        <div class="hero-bg">
+            
+            <svg width="100%" height="200" viewBox="0 0 1440 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;">
+                <path d="M0,160 Q360,100 720,160 Q1080,220 1440,160 L1440,320 L0,320Z" fill="#23243a"/>
+            </svg>
+           
+            <svg class="onda-luz" width="100%" height="60" viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="gradienteVermelho" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#ff2e88" />
+                        <stop offset="1" stop-color="#ff0000" />
+                    </linearGradient>
+                    <filter id="glow" x="-20" y="-20" width="1480" height="100">
+                        <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <path
+                    d="M0,40 Q360,10 720,40 Q1080,70 1440,40"
+                    stroke="url(#gradienteVermelho)"
+                    stroke-width="6"
+                    fill="none"
+                    filter="url(#glow)"
+                />
+            </svg>
+        </div>
+        <div class="hero-content" style="position:relative;z-index:4;text-align:center;">
+            <img src="sua-foto.jpg" alt="Foto de Rafael Franklin" style="width:180px;height:180px;border-radius:50%;box-shadow:0 8px 32px #0008;border:4px solid #23243a;background:#23243a;">
+        </div>
+    </section>
+
+    
+    <main class="principal" style="max-width:1200px;margin:0 auto;display:flex;gap:3rem;padding:2rem 1rem 0 1rem;">
+        <section id="artigos" class="artigos-tutoriais" style="flex:2;">
+            <h2>Sobre mim</h2>
+            <article>
+                <h3>Sobre mim</h3>
+                <p>olá</p>
+                <a href="#">Ler mais</a>
+            </article>
+        </section>
+        <aside class="sidebar" style="flex:1;">
+            <section id="categorias" class="categorias">
+                <h3>Navegar por Categoria</h3>
+                <div class="tags">
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Html</span>
+                    
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="rodape" style="background:#23243a;text-align:center;padding:1.5rem 0;color:#b3e0ff;margin-top:4rem;font-size:1rem;">
+        <p>&copy; 2024 Rafael Franklin - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
