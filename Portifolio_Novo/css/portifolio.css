@@ -1,9 +1,15 @@
-/* Fundo escuro com gradiente elegante e padrões leves */
-body.dark-theme {
-    background: linear-gradient(135deg, #0f1115 0%, #1a1d23 100%);
-    color: #f1f1f1;
-    background-image: 
-        radial-gradient(circle at 30% 30%, rgba(255,255,255,0.03) 1px, transparent 1px),
-        radial-gradient(circle at 70% 70%, rgba(255,255,255,0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
+#corpoFundo {
+    background-color: rgb(53, 50, 50);
+    color: aliceblue;
+}
+/* pesquisar sobre o Jetbrains para utilizar em fontes*/
+.tirarEstiloLink  a {
+
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+background-color: black;
+color: inherit;
+    outline: none;
+    margin-left: 2rem;
 }
