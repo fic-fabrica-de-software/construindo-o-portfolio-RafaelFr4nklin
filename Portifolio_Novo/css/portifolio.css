@@ -1,15 +1,25 @@
 #corpoFundo {
     background-color: rgb(53, 50, 50);
     color: aliceblue;
+    margin: 0;
+    padding: 0;
 }
-/* pesquisar sobre o Jetbrains para utilizar em fontes*/
-.tirarEstiloLink  a {
 
+/* pesquisar sobre o Jetbrains para utilizar em fontes*/
+.topoFlex {
+    display: flex;
+    background-color: black;
+}
+
+.linkSemEstilo {
     list-style: none;
     text-decoration: none;
-    display: flex;
-background-color: black;
-color: inherit;
-    outline: none;
-    margin-left: 2rem;
+    color: inherit;
+    padding: 30px;
+    font-size: 1rem;
+
 }
+
+
+
+
