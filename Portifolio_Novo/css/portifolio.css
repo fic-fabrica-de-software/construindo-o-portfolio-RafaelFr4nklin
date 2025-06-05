@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #corpoFundo {
     background-color: rgb(53, 50, 50);
     color: aliceblue;
@@ -6,20 +12,46 @@
 }
 
 /* pesquisar sobre o Jetbrains para utilizar em fontes*/
-.topoFlex {
+#topoFlex {
     display: flex;
     background-color: black;
+    padding: 2rem;
+    justify-content: end;
 }
 
 .linkSemEstilo {
     list-style: none;
     text-decoration: none;
     color: inherit;
-    padding: 30px;
+    padding: 0.2rem;
     font-size: 1rem;
 
 }
 
+#imagemForma {
+    border: 1rem whitesmoke;
+background-color: aquamarine;
+    border-radius: 100%;
+    margin: 2rem;
+    position: relative;
+    
+}
 
+.nuvemForm {
+ border-radius: 1rem;
+ margin: 2rem;
+ background-color: rgb(61, 60, 60);
+ padding: 0.8rem;
+ position: relative;
 
+}
+
+.tituloform {
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+#cabeçalho {
+
+}
 
