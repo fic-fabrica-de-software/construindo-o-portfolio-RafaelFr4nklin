@@ -124,7 +124,7 @@ background-color: aquamarine;
     font-size: 2rem;
 }
 
-#botaoCabecalho a {
+.botaoCabecalho a {
     position: relative;
     color: white;
     text-decoration: none;
@@ -133,7 +133,7 @@ background-color: aquamarine;
     transition: color 0.3s;
 }
 
-#botaoCabecalho a::after {
+.botaoCabecalho a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -146,11 +146,26 @@ background-color: aquamarine;
     transition: transform 0.3s ease-in-out;
 }
 
-#botaoCabecalho a:hover::after {
+.botaoCabecalho a:hover::after {
     transform: scaleX(1);
 }
 
 
-#botaoCabecalho a:hover {
+.botaoCabecalho a:hover {
     color: #4FC1E9;
+}
+
+.voltarPagina {
+background-color: #D6D6D6;
+    padding: 0.4rem 0.4rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 1rem;
+    color: #0A1A3F;
 }
